@@ -367,6 +367,32 @@ background:linear-gradient(135deg,#6ea8ff,#a855f7);
 color:var(--muted);
 }
 
+/* Visitor Section Styling */
+.visitor-section {
+    text-align: center;
+    padding: 60px 0;
+    background: rgba(110, 168, 255, 0.05);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.visitor-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+    background: var(--glass);
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    font-weight: 800;
+    box-shadow: 0 0 20px rgba(110, 168, 255, 0.2);
+}
+
+.visitor-number {
+    font-size: 24px;
+    color: var(--primary);
+}
+
 .timeline{
 display:grid;
 gap:30px;
@@ -376,7 +402,7 @@ position:relative;
 .timeline::before{
 content:"";
 position:absolute;
-left:16px; /* تعديل لليسار لتناسب الإنجليزية */
+left:16px; 
 top:0;
 width:3px;
 height:100%;
@@ -385,13 +411,13 @@ background:linear-gradient(#6ea8ff,#a855f7);
 
 .timeline-item{
 position:relative;
-padding-left:60px; /* تعديل لليسار لتناسب الإنجليزية */
+padding-left:60px; 
 }
 
 .timeline-item::before{
 content:"";
 position:absolute;
-left:7px; /* تعديل لليسار لتناسب الإنجليزية */
+left:7px; 
 top:10px;
 width:20px;
 height:20px;
@@ -481,47 +507,11 @@ transform:translateY(0);
 }
 
 @media(max-width:950px){
-
-.hero-grid{
-grid-template-columns:1fr;
-}
-
-.hero{
-text-align:center;
-}
-
-.buttons{
-justify-content:center;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-nav{
-display:none;
-}
-
-}
-
-@media(max-width:600px){
-
-.hero h1{
-font-size:36px;
-}
-
-.section-title h2{
-font-size:30px;
-}
-
-.contact{
-padding:40px 22px;
-}
-
-.contact h2{
-font-size:32px;
-}
-
+.hero-grid{grid-template-columns:1fr;}
+.hero{text-align:center;}
+.buttons{justify-content:center;}
+.hero h1{font-size:46px;}
+nav{display:none;}
 }
 
 </style>
@@ -535,322 +525,154 @@ font-size:32px;
 
 <header>
 <div class="container navbar">
-
 <div class="logo">
-<div class="logo-icon">
-<img src="001.jpg" alt="Logo">
-</div>
-
+<div class="logo-icon"><img src="001.jpg" alt="Logo"></div>
 <div>
 <h2>ALMUTAMAYIZUN</h2>
 <span>CINEMATIC DIGITAL STUDIO</span>
 </div>
 </div>
-
 <nav>
 <a href="#services">Services</a>
 <a href="#stats">Statistics</a>
 <a href="#workflow">Workflow</a>
 <a href="#contact">Contact</a>
 </nav>
-
 </div>
 </header>
 
 <section class="hero">
-
 <div class="container hero-grid">
-
 <div class="reveal">
-
-<h1>
-Transforming your ideas into
-<span class="gradient">Cinematic Masterpieces</span>
-that capture attention
-</h1>
-
-<p>
-Professional editing, Reels & Shorts design, interaction engineering, 
-and modern visual production with an integrated professional cinematic style.
-</p>
-
+<h1>Transforming your ideas into <span class="gradient">Cinematic Masterpieces</span> that capture attention</h1>
+<p>Professional editing, Reels & Shorts design, interaction engineering, and modern visual production.</p>
 <div class="buttons">
-
-<a href="https://kwork.com/editingpostproduction/51339995/cinematic-reels-shorts-video-editing?ref=24057486"
-target="_blank"
-class="btn btn-primary">
-Order via Kwork
-</a>
-
-<a href="https://youtube.com/@ourteacherone"
-target="_blank"
-class="btn btn-secondary">
-Portfolio
-</a>
-
-<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1"
-target="_blank"
-class="btn btn-secondary">
-WhatsApp
-</a>
-
+<a href="https://kwork.com/editingpostproduction/51339995/cinematic-reels-shorts-video-editing?ref=24057486" target="_blank" class="btn btn-primary">Order via Kwork</a>
+<a href="https://youtube.com/@ourteacherone" target="_blank" class="btn btn-secondary">Portfolio</a>
+<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1" target="_blank" class="btn btn-secondary">WhatsApp</a>
 </div>
-
 </div>
-
 <div class="hero-card reveal">
-
 <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1400&auto=format&fit=crop">
-
-<div class="play">
-<div>
-<i class="fa-solid fa-play"></i>
+<div class="play"><div><i class="fa-solid fa-play"></i></div></div>
 </div>
 </div>
-
-</div>
-
-</div>
-
 </section>
 
+<div class="visitor-section reveal">
+    <div class="container">
+        <div class="visitor-badge">
+            <i class="fa-solid fa-users"></i>
+            <span>YOU ARE VISITOR NUMBER:</span>
+            <span class="visitor-number" id="visitor-count">1,000,000</span>
+        </div>
+    </div>
+</div>
+
 <section id="services">
-
 <div class="container">
-
 <div class="section-title reveal">
 <span>OUR SERVICES</span>
 <h2>Professional Services</h2>
-<p>
-Comprehensive solutions for modern content creation with advanced visual direction and professional digital experience.
-</p>
+<p>Comprehensive solutions for modern content creation with advanced visual direction.</p>
 </div>
-
 <div class="cards">
-
 <div class="card reveal">
 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Cinematic Editing</h3>
-<p>
-Professional visual production using the latest motion effects and cinematic color correction.
-</p>
+<div class="card-content"><h3>Cinematic Editing</h3><p>Professional visual production using cinematic color correction.</p></div>
 </div>
-</div>
-
 <div class="card reveal">
 <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Reels & Shorts</h3>
-<p>
-Modern short video design that achieves high engagement and attracts the audience from the start.
-</p>
+<div class="card-content"><h3>Reels & Shorts</h3><p>Modern short video design that achieves high engagement.</p></div>
 </div>
-</div>
-
 <div class="card reveal">
 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Interaction Analysis</h3>
-<p>
-Analyzing content performance and improving reach and viewer retention through algorithmic methods.
-</p>
+<div class="card-content"><h3>Interaction Analysis</h3><p>Analyzing content performance and improving reach.</p></div>
 </div>
 </div>
-
 </div>
-
-</div>
-
 </section>
 
 <section id="stats">
-
 <div class="container">
-
-<div class="section-title reveal">
-<span>STATISTICS</span>
-<h2>Numbers Reflecting Professionalism</h2>
-</div>
-
+<div class="section-title reveal"><span>STATISTICS</span><h2>Numbers Reflecting Professionalism</h2></div>
 <div class="stats">
-
-<div class="stat reveal">
-<h3 class="counter" data-target="350">0</h3>
-<p>Completed Projects</p>
+<div class="stat reveal"><h3 class="counter" data-target="350">0</h3><p>Completed Projects</p></div>
+<div class="stat reveal"><h3 class="counter" data-target="1000000">0</h3><p>Total Views</p></div> <div class="stat reveal"><h3 class="counter" data-target="98">0</h3><p>Customer Satisfaction %</p></div>
+<div class="stat reveal"><h3>24/7</h3><p>Continuous Support</p></div>
 </div>
-
-<div class="stat reveal">
-<h3 class="counter" data-target="1">0</h3>
-<p>Million Views</p>
 </div>
-
-<div class="stat reveal">
-<h3 class="counter" data-target="98">0</h3>
-<p>Customer Satisfaction %</p>
-</div>
-
-<div class="stat reveal">
-<h3>24/7</h3>
-<p>Continuous Support</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <section id="workflow">
-
 <div class="container">
-
-<div class="section-title reveal">
-<span>WORKFLOW</span>
-<h2>Our Process</h2>
-</div>
-
+<div class="section-title reveal"><span>WORKFLOW</span><h2>Our Process</h2></div>
 <div class="timeline">
-
-<div class="timeline-item reveal">
-<div class="timeline-box">
-<h3>Project Analysis</h3>
-<p>
-Understanding the idea, target audience, and determining the appropriate visual identity for the content.
-</p>
+<div class="timeline-item reveal"><div class="timeline-box"><h3>Project Analysis</h3><p>Understanding the idea and target audience.</p></div></div>
+<div class="timeline-item reveal"><div class="timeline-box"><h3>Production & Editing</h3><p>Execution according to professional standards.</p></div></div>
+<div class="timeline-item reveal"><div class="timeline-box"><h3>Optimization & Publishing</h3><p>Optimizing quality for digital platforms.</p></div></div>
 </div>
 </div>
-
-<div class="timeline-item reveal">
-<div class="timeline-box">
-<h3>Production & Editing</h3>
-<p>
-Execution of editing, effects, and motion according to professional cinematic standards.
-</p>
-</div>
-</div>
-
-<div class="timeline-item reveal">
-<div class="timeline-box">
-<h3>Optimization & Publishing</h3>
-<p>
-Optimizing video quality and preparing it for publishing with the best performance on digital platforms.
-</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <section id="contact">
-
 <div class="container">
-
 <div class="contact reveal">
-
 <h2>Start Your Professional Project Now</h2>
-
-<p>
-We are ready to turn your ideas into professional visual content that elevates your digital presence quality.
-</p>
-
+<p>We are ready to turn your ideas into professional visual content.</p>
 <div class="buttons" style="justify-content:center;">
-
-<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1"
-target="_blank"
-class="btn btn-primary">
-Contact via WhatsApp
-</a>
-
-<a href="https://youtube.com/@ourteacherone"
-target="_blank"
-class="btn btn-secondary">
-YouTube Channel
-</a>
-
+<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1" target="_blank" class="btn btn-primary">Contact via WhatsApp</a>
+<a href="https://youtube.com/@ourteacherone" target="_blank" class="btn btn-secondary">YouTube Channel</a>
 </div>
-
 <div class="socials">
-
-<a href="https://youtube.com/@ourteacherone" target="_blank">
-<i class="fa-brands fa-youtube"></i>
-</a>
-
-<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<a href="https://kwork.com/editingpostproduction/51339995/cinematic-reels-shorts-video-editing?ref=24057486" target="_blank">
-<i class="fa-solid fa-briefcase"></i>
-</a>
-
+<a href="https://youtube.com/@ourteacherone" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://chat.whatsapp.com/DDFPPenA7yX3pgmfOPhpk1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://kwork.com/editingpostproduction/51339995/cinematic-reels-shorts-video-editing?ref=24057486" target="_blank"><i class="fa-solid fa-briefcase"></i></a>
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-<footer>
-© 2026 ALMUTAMAYIZUN TEAM — Professionalism in every frame
-</footer>
+<footer>© 2026 ALMUTAMAYIZUN TEAM — Professionalism in every frame</footer>
 
 <script>
-
 window.addEventListener("load",()=>{
-document.getElementById("loader").classList.add("hidden");
+    document.getElementById("loader").classList.add("hidden");
+    
+    // Visitor Logic: 1 Million + Random (2 or 3 digits)
+    const baseNumber = 1000000;
+    const randomNumber = Math.floor(Math.random() * 900) + 100; // Generates 3-digit number
+    const finalVisitor = baseNumber + randomNumber;
+    document.getElementById("visitor-count").innerText = finalVisitor.toLocaleString();
 });
 
 const reveals=document.querySelectorAll(".reveal");
-
 function revealOnScroll(){
-
-reveals.forEach(item=>{
-
-const windowHeight=window.innerHeight;
-const revealTop=item.getBoundingClientRect().top;
-
-if(revealTop<windowHeight-100){
-item.classList.add("active");
+    reveals.forEach(item=>{
+        const windowHeight=window.innerHeight;
+        const revealTop=item.getBoundingClientRect().top;
+        if(revealTop<windowHeight-100){item.classList.add("active");}
+    });
 }
-
-});
-
-}
-
 window.addEventListener("scroll",revealOnScroll);
 revealOnScroll();
 
 const counters=document.querySelectorAll(".counter");
-
 counters.forEach(counter=>{
-
-counter.innerText='0';
-
-const update=()=>{
-
-const target=+counter.getAttribute('data-target');
-const current=+counter.innerText;
-
-const increment = target > 10 ? target/80 : 1;
-
-if(current<target){
-counter.innerText=Math.ceil(current+increment);
-setTimeout(update,20);
-}else{
-counter.innerText=target;
-}
-
-};
-
-update();
-
+    counter.innerText='0';
+    const update=()=>{
+        const target=+counter.getAttribute('data-target');
+        const current=+counter.innerText;
+        const increment = target > 100 ? target/100 : 1;
+        if(current<target){
+            counter.innerText=Math.ceil(current+increment);
+            setTimeout(update,20);
+        }else{
+            counter.innerText=target.toLocaleString();
+        }
+    };
+    update();
 });
-
 </script>
 
 </body>
